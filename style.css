@@ -1,0 +1,127 @@
+
+body
+{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: hsl(235, 18%, 26%);
+  font-family:"Roboto" ;
+}
+#container
+{
+
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 77%;
+  width: 63%;
+  min-width:750px ;
+}
+#info
+{
+padding: 15px;
+height: 92%;
+width: 43%;
+}
+#photo
+{
+  
+  border-radius: 20px;
+  background-image: url(assets/images/illustration-sign-up-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92%;
+width: 43%;
+}
+.head
+{
+  font-size: 45px;
+}
+.lists
+{
+list-style-image: url(assets/images/icon-list.svg);
+margin-bottom: 7px;
+}
+#mail
+{
+  
+margin-top: 20px;
+  width: 95%;
+  justify-self: center;
+}
+#inp
+{
+  margin-top: 5px;
+  cursor: pointer;
+  border: 1px solid rgb(203, 203, 203);
+  justify-self: center;
+  border-radius:7px ;
+  height: 40px;
+  width: 98%;
+}
+#subscribe,#dis
+{
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: hsl(234, 29%, 20%) ;
+  font-size:16px ;
+  border-radius: 7px;
+  margin: 15px;
+  justify-self: center;
+  height: 45px;
+  width: 95%;
+}
+#subscribe,#dis:hover
+{
+  background: linear-gradient(90deg,hsl(4, 100%, 67%),orange);
+  box-shadow: 2px 2px 10px orange;
+  box-shadow: -2px -2px 10px hsl(4, 100%, 67%) ;
+}
+#err
+{
+  margin-top: 10px;
+  color: rgb(255, 76, 76);
+  border: none;
+}
+#success
+{
+  height: 60%;
+  width: 400px;
+background-color: white;
+padding: 15px;
+border-radius: 30px;
+  font-family: inherit;
+  text-align: center;
+  display:none;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width:780px)
+{
+
+ #container
+ {
+     
+  height: 130vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+min-width: 320px;
+  border-radius: 0px;
+ } 
+ #info{width: 95%; height: 49%;}
+ #photo{width: 95%; height: 49%;
+  background-image: url(assets/images/illustration-sign-up-mobile.svg);
+  border-top-left-radius:0px ;
+  border-top-right-radius: 0px;
+  object-fit: contain;}
+  #success{height:60%; width: 100%;align-items: center;padding-top: 40px;}
+}
+
+
+
